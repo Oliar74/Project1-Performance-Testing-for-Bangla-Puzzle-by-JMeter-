@@ -83,3 +83,11 @@ Testplan > Add > Threads (Users) > Thread Group (this might vary dependent on th
   ## List of API
   * https://www.banglapuzzle.com/
   * https://www.banglapuzzle.com/contact/
+  
+  ## Load the JMeter Script
+  * File > Open (CTRL + O)
+  * Locate the "project1(Bangla-Puzzle).jmx" file contained on this repo
+  * Continue open Test100project1(Bangla-Puzzle) to Test800project1(Bangla-Puzzle)
+  * Open those file
+  * The Test Plan will be loaded
+![image](https://github.com/user-attachments/assets/17cdd8f3-fad8-4baa-bc3f-fc420ca2a784)
