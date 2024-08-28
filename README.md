@@ -87,9 +87,10 @@ Testplan > Add > Threads (Users) > Thread Group (this might vary dependent on th
   ## Load the JMeter Script
   * File > Open (CTRL + O)
   * Locate the "project1(Bangla-Puzzle).jmx" file contained on this repo
-  * Continue open Test100project1(Bangla-Puzzle) to Test800project1(Bangla-Puzzle)
+  * Continue open Test100project1(Bangla-Puzzle).jmx to Test800project1(Bangla-Puzzle).jmx
   * Open those file
   * The Test Plan will be loaded
+  * Download Test-Plan in several time to given Thread Group>>Number of Threads(user), Rampup-up-period(second)
 ![image](https://github.com/user-attachments/assets/17cdd8f3-fad8-4baa-bc3f-fc420ca2a784)
 
 # Test execution (from the Terminal)
@@ -101,7 +102,22 @@ Testplan > Add > Threads (Users) > Thread Group (this might vary dependent on th
 ```
 jmeter -n -t Test100project1(Bangla-Puzzle).jmx -l report\Test100project1(Bangla-Puzzle).jtl
 ```
-Then continue to upgrade Threads(100 to 1600) by keeping Ramp-up Same.
+  * n: non GUI mode
+  * t: test plan to execute
+  * l: output file with results
+##### Then continue to upgrade Threads(100 to 1600) by keeping Ramp-up Same.
 
 ![image](https://github.com/user-attachments/assets/abc63b96-5091-4d3d-8d33-872892986801)
 
+After completing this command You will get a .jtl file in that specific folder(report)
+![image](https://github.com/user-attachments/assets/00da7f68-180f-4d41-83ef-12629431b311)
+
+## Make html file
+```
+jmeter -g report\Test100project1(Bangla-Puzzle).jtl -o report\Test100project1(Bangla-Puzzle).html
+```
+  * g: jtl results file
+  * o: path to output folder
+
+![image](https://github.com/user-attachments/assets/0170e509-d4f4-4656-b444-eb38a4df7476)
+![image](https://github.com/user-attachments/assets/f8cb6e48-d0a3-476a-a28e-b7ee49c2830f)
