@@ -31,14 +31,15 @@ Performance Testing for Bangla Puzzle Website's Home Page &amp; Contact Page by 
 This document explains how to run a performance test with JMeter against the banglapuzzle.com website. Here tested for two major APIs; One is the Home Page and the other is the Contact page. We collect the API by using Blazemeter and using it in Jmeter. It was tested on various Threads(users). Then we analyze those reports and make a final report as the performance of this site [Bangla Puzzle](#banglapuzzle.com)
 
 # Installation
-### Java
-https://www.oracle.com/java/technologies/downloads/
+  ### Java
+  https://www.oracle.com/java/technologies/downloads/
 
-### JMeter
-https://jmeter.apache.org/download_jmeter.cgi
+  ### JMeter
+  https://jmeter.apache.org/download_jmeter.cgi
 
-Click =>Binaries
-=>apache-jmeter-5.5.zip
+* Click =>Binaries
+* =>apache-jmeter-5.5.zip and Unzip this file
+* Open bin folder and click on jmeter.bat file
 
 ### We use BlazeMeter to generate JMX files
 https://chrome.google.com/webstore/detail/blazemeter-the-continuous/mbopgmdnpcbohhpnfglgohlbhfongabi?hl=en
