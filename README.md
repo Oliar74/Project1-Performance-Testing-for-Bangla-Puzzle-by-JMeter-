@@ -32,17 +32,16 @@ This document explains how to run a performance test with JMeter against the ban
 
 # Installation
   ### Java
-  https://www.oracle.com/java/technologies/downloads/
+   https://www.oracle.com/java/technologies/downloads/
 
   ### JMeter
-  https://jmeter.apache.org/download_jmeter.cgi
+   https://jmeter.apache.org/download_jmeter.cgi
 
 * Click =>Binaries
 * =>apache-jmeter-5.5.zip and Unzip this file
 * Open bin folder and click on jmeter.bat file
-
 ### We use BlazeMeter to generate JMX files
-https://chrome.google.com/webstore/detail/blazemeter-the-continuous/mbopgmdnpcbohhpnfglgohlbhfongabi?hl=en
+  https://chrome.google.com/webstore/detail/blazemeter-the-continuous/mbopgmdnpcbohhpnfglgohlbhfongabi?hl=en
 
 # Prerequisites
 - As of JMeter 4.0, Java 8 and above are supported.
