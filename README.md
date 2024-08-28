@@ -91,3 +91,17 @@ Testplan > Add > Threads (Users) > Thread Group (this might vary dependent on th
   * Open those file
   * The Test Plan will be loaded
 ![image](https://github.com/user-attachments/assets/17cdd8f3-fad8-4baa-bc3f-fc420ca2a784)
+
+# Test execution (from the Terminal)
+* JMeter should be initialized in non-GUI mode.
+* Make a report folder in the bin folder.
+* Run Command in jmeter\bin folder.
+
+## Make jtl file
+```
+jmeter -n -t Test100project1(Bangla-Puzzle).jmx -l report\Test100project1(Bangla-Puzzle).jtl
+```
+Then continue to upgrade Threads(100 to 1600) by keeping Ramp-up Same.
+
+![image](https://github.com/user-attachments/assets/abc63b96-5091-4d3d-8d33-872892986801)
+
