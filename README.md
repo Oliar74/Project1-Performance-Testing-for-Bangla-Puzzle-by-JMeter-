@@ -28,46 +28,58 @@ Performance Testing for Bangla Puzzle Website's Home Page &amp; Contact Page by 
 - Server can handle almost concurrent 800 API calls with almost zero (0) error rate.
 
 # Introduction
-This document explains how to run a performance test with JMeter against the banglapuzzle.com website. Here tested for two major APIs; One is the Home Page and the other is the Contact page. We record the history by using Blazemeter and using it in Jmeter. It was tested on various Threads(users). Then we analyze those reports and make a final report as the performance of this site [Bangla Puzzle](#banglapuzzle.com)
+This document explains how to run a performance test with JMeter against the banglapuzzle.com website. Here tested for two major APIs; One is the Home Page and the other is the Contact page. We collect the API by using Blazemeter and using it in Jmeter. It was tested on various Threads(users). Then we analyze those reports and make a final report as the performance of this site [Bangla Puzzle](#banglapuzzle.com)
 
-# My Project
+# Installation
+### Java
+https://www.oracle.com/java/technologies/downloads/
 
-- [Load Testing Report](#load-testing-report)
-- [Load Testing Report](##load-testing-report1)
-# Load Testing Report
-## Load Testing Report1
-[Section Name](#section-name)
-```
-oliar rahman
-```
-# My Project
+### JMeter
+https://jmeter.apache.org/download_jmeter.cgi
 
+Click =>Binaries
+=>apache-jmeter-5.5.zip
 
+### We use BlazeMeter to generate JMX files
+https://chrome.google.com/webstore/detail/blazemeter-the-continuous/mbopgmdnpcbohhpnfglgohlbhfongabi?hl=en
 
-## Introduction
+# Prerequisites
+- As of JMeter 4.0, Java 8 and above are supported.
+- We suggest a multicore CPU with Core i5 or more.
+- Memory 16GB RAM is a good value.
 
-Introduction text here.
+# Elements of a minimal test plan
+1. Thread Group
 
-## Installation
+2. The root element of every test plan. Simulates the (concurrent) users and then run all requests. Each thread simulates a single user.
 
-### Requirements
+3. HTTP Request Default (Configuration Element)
 
-List of requirements.
+4. HTTP Request (Sampler)
 
-### Steps
+5. Summary Report (Listener)
 
-Installation steps.
+# Test Plan
 
-## Usage
+Testplan > Add > Threads (Users) > Thread Group (this might vary dependent on the jMeter version you are using)
 
-### Command Line
+* Name: Users
+* Number of Threads (users): 100 to 1600
+* Ramp-Up Period (in seconds): 10
+* Loop Count: 1
+  * The general setting for the tests execution, such as whether Thread Groups will run simultaneously or sequentially, is specified in the item called Test Plan.
 
-How to use the command line interface.
+  * All HTTP Requests will use some default settings from the HTTP Request, such as the Server IP, Port Number, and Content-Encoding.
 
-### Python API
+  * Each Thread Group specifies how the HTTP Requests should be carried out. To determine how many concurrent "users" will be simulated, one must first know the number of threads. The number of actions each "user" will perform is determined by the loop count.
 
-How to use the Python API.
+  * The HTTP Header Manager, which allows you to provide the Request Headers that will be utilized by the upcoming HTTP Requests, is the first item in Thread Groups.
+    
+# Collection of API
+* Run BlazeMeter
+* Collect Frequently used API
+* Save JMX file then paste => apache-jmeter-5.5\bin
 
-## License
-
-License details.
+  ## List of API
+  * https://www.banglapuzzle.com/
+  * https://www.banglapuzzle.com/contact/
