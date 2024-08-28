@@ -1,15 +1,25 @@
-# Project1- Performance Testing for Bangla Puzzle Website by using JMeter
+# Performance Testing for Bangla Puzzle Website by using JMeter
 Performance Testing for Bangla Puzzle Website's Home Page &amp; Contact Page by using JMeter
+## Table of Contents
+
+- [Introduction](#introduction)
+- [Installation](#installation)
+  - [Requirements](#requirements)
+  - [Steps](#steps)
+- [Usage](#usage)
+  - [Command Line](#command-line)
+  - [Python API](#python-api)
+- [License](#license)
 # Load Testing Report
-![image](https://github.com/user-attachments/assets/02486c52-0ce9-49db-8172-28ee79e7dfee)
 
 | Concurrent Request   | Loop Count   | Avg TPS for Totla Sample | Error Rate% | Total Concurrent API Request |
 |----------------------|--------------|--------------------------|-------------|------------------------------|
-|       200            |       10     |            234           |      0%     |           1400               |
-|       200            |       10     |            234           |      0%     |           1400               |
-|       200            |       10     |            234           |      0%     |           1400               |
-|       200            |       10     |            234           |      0%     |           1400               |
-|       200            |       10     |            234           |      0%     |           1400               |
+|       50             |       10     |            0.033         |      0%     |           100                |
+|       100            |       10     |            1.30          |      0%     |           200                |
+|       200            |       10     |            2.5           |      0%     |           400                |
+|       400            |       10     |            6             |      0%     |           800                |
+|       600            |       10     |            5.9           |   6.33%     |           1200               |
+|       800            |       10     |            6             |   21.0%     |           1600               |
 
 
 
@@ -28,16 +38,7 @@ oliar rahman
 ```
 # My Project
 
-## Table of Contents
 
-- [Introduction](#introduction)
-- [Installation](#installation)
-  - [Requirements](#requirements)
-  - [Steps](#steps)
-- [Usage](#usage)
-  - [Command Line](#command-line)
-  - [Python API](#python-api)
-- [License](#license)
 
 ## Introduction
 
