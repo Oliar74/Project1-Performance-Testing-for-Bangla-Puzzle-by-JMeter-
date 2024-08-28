@@ -14,17 +14,17 @@ Performance Testing for Bangla Puzzle Website's Home Page &amp; Contact Page by 
 
 | Concurrent Request   | Loop Count   | Avg TPS for Totla Sample | Error Rate% | Total Concurrent API Request |
 |----------------------|--------------|--------------------------|-------------|------------------------------|
-|       50             |       10     |            0.033         |      0%     |           100                |
-|       100            |       10     |            1.30          |      0%     |           200                |
-|       200            |       10     |            2.5           |      0%     |           400                |
-|       400            |       10     |            6             |      0%     |           800                |
-|       600            |       10     |            5.9           |   6.33%     |           1200               |
-|       800            |       10     |            6             |   21.0%     |           1600               |
-
+|       100            |       10     |            0.033         |      0%     |           58                 |
+|       200            |       10     |            1.30          |      0%     |           138                |
+|       400            |       10     |            2.5           |      0%     |           400                |
+|       800            |       10     |            6             |      0%     |           800                |
+|      1000            |       10     |            7             |   0.70%     |           933                |
+|      1200            |       10     |            5.9           |   6.33%     |           1124               |
+|      1600            |       10     |            6             |   21.0%     |           1264               |
 
 
 ## Summary
-- While executed 3 concurrent request, found 636 request got connection timeout and error rate is 0.47%.
+- While executed 500 concurrent request, found 1000 request got connection timeout and error rate is 0.47%.
 - Server can handle almost concurrent 424 API call with almost zero (0) error rate.
 # My Project
 
