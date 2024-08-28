@@ -24,8 +24,12 @@ Performance Testing for Bangla Puzzle Website's Home Page &amp; Contact Page by 
 
 
 ## Summary
-- While executed 500 concurrent request, found 1000 request got connection timeout and error rate is 0.47%.
-- Server can handle almost concurrent 424 API call with almost zero (0) error rate.
+- While executing 1000 concurrent requests, 933 requests got connection timeout and the error rate is 0.70%.
+- Server can handle almost concurrent 800 API calls with almost zero (0) error rate.
+
+# Introduction
+This document explains how to run a performance test with JMeter against the banglapuzzle.com website. Here tested for two major APIs; One is the Home Page and the other is the Contact page. We record the history by using Blazemeter and using it in Jmeter. It was tested on various Threads(users). Then we analyze those reports and make a final report as the performance of this site [Bangla Puzzle](#banglapuzzle.com)
+
 # My Project
 
 - [Load Testing Report](#load-testing-report)
