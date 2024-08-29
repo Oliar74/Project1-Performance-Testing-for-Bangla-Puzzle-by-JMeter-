@@ -149,3 +149,26 @@ jmeter -g report\Test100project1(Bangla-Puzzle).jtl -o report\Test100project1(Ba
 |  ![image](https://github.com/user-attachments/assets/6c6991c5-5c51-4b59-9725-08c6aa20612c) | ![image](https://github.com/user-attachments/assets/61381449-21e5-4c3b-ad3b-1be3f3e6411e) |
 
 
+# Stress Testing
+Stress Testing is a type of software testing that evaluates how the software responds under extreme conditions. It verifies how robust a system will be, and its response capabilities and error handling when it is subjected to conditions where its normal functioning can be compromised.
+
+## Number of Threads 1200 ; Ramp-Up Period 10s
+| Requests Summary  | Errors   |
+|-------------------|----------|
+|  ![image](https://github.com/user-attachments/assets/55b5b16f-a246-4b4c-961b-ebba4a786cc1)| ![image](https://github.com/user-attachments/assets/47d228e3-5784-4d34-ae23-3398994a9f27) |
+
+# Spike Testing
+Spike testing is a type of performance testing where the demand for an application is suddenly and drastically increased or decreased. Spike testing's objective is to ascertain how a software program will behave under highly variable traffic conditions.
+## Number of Threads 1600 ; Ramp-Up Period 10s
+| Requests Summary  | Errors   |
+|-------------------|----------|
+|  ![image](https://github.com/user-attachments/assets/50edc361-57ca-4b84-ad09-5e3e420f2888) | ![image](https://github.com/user-attachments/assets/40150ca6-fa7d-46a1-8230-e42848f99260) |
+
+# Endurance Testing
+An application may be put through endurance testing to see if it can handle the processing load that will be placed on it over an extended period of time. Memory usage is tracked throughout endurance tests to identify potential issues.
+
+## Start Threads count 2 ; Initial Delay 0s ; Start up Time 10s ; Hold load for 500s ; Shutdown Time 0s
+
+| Requests Summary  | Errors   |
+|-------------------|----------|
+|  ![image](https://github.com/user-attachments/assets/b0598014-38d7-4bb4-bd32-3cde024c7845) | ![image](https://github.com/user-attachments/assets/14a73d48-c38b-446d-8204-6bc9b8e23855)|
