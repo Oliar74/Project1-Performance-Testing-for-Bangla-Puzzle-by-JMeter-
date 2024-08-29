@@ -1,12 +1,19 @@
 # Performance Testing for Bangla Puzzle Website by using JMeter
-Performance Testing for Bangla Puzzle Website's Home Page &amp; Contact Page by using JMeter
-## Table of Contents
+Performance Testing for Bangla Puzzle Website's Home Page &amp; Contact Page by using JMeter. We tested Load Testing, Stress testing, Spike Testing, Endurance Testing and more!
 
+
+
+## Table of Contents
+- [Load Testing Report](#load-testing-report)
+  - [Summary](#summary)
 - [Introduction](#introduction)
 - [Installation](#installation)
-  - [Requirements](#requirements)
-  - [Steps](#steps)
-- [Usage](#usage)
+  - [Java](#java)
+  - [JMeter](#jmeter) 
+  - [BlazeMeter API Collection Extension Add](blazeMeter-api-collection-extension-add)
+- [Prerequisites](#prerequisites)
+- [Elements of a minimal test plan](#elements-of-a-minimal-test-plan)
+- [Prerequisites](#prerequisites)
   - [Command Line](#command-line)
   - [Python API](#python-api)
 - [License](#license)
@@ -40,7 +47,7 @@ This document explains how to run a performance test with JMeter against the ban
 * Click =>Binaries
 * =>apache-jmeter-5.5.zip and Unzip this file
 * Open bin folder and click on jmeter.bat file
-### We use BlazeMeter to generate JMX files
+### BlazeMeter API Collection Extension Add
   https://chrome.google.com/webstore/detail/blazemeter-the-continuous/mbopgmdnpcbohhpnfglgohlbhfongabi?hl=en
 
 # Prerequisites
