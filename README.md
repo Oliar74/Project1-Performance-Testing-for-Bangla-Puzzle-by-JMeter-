@@ -13,10 +13,19 @@ Performance Testing for Bangla Puzzle Website's Home Page &amp; Contact Page by 
   - [BlazeMeter API Collection Extension Add](blazeMeter-api-collection-extension-add)
 - [Prerequisites](#prerequisites)
 - [Elements of a minimal test plan](#elements-of-a-minimal-test-plan)
-- [Prerequisites](#prerequisites)
-  - [Command Line](#command-line)
-  - [Python API](#python-api)
-- [License](#license)
+- [Test Plan](#test-plan)
+- [Collection of API](#collection-of-api)
+  - [List of API](#list-of-api)
+  - [Load the JMeter Script](#load-the-jmeter-script)
+- [Test execution (from the Terminal)](#test-execution-from-the-terminal)
+  - [Make jtl file](#make-jtl-file)
+  - [Make html file](#make-html-file)
+- [HTML Reports](#html-report)
+- [Stress Testing](#stress-testing)
+- [Spike Testing](#spike-testing)
+- [Endurance Testing](#endurance-testing)
+
+  
 # Load Testing Report
 
 | Concurrent Request   | Loop Count   | Avg TPS for Totla Sample | Error Rate% | Total Concurrent API Request |
